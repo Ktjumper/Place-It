@@ -1,0 +1,35 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    class="com.google.android.gms.maps.SupportMapFragment" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_place"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:hint="@string/enter_Address"
+            android:inputType="text"
+            android:scrollHorizontally="true" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:background="@drawable/button"
+            android:text="@string/search"
+            android:textColor="@android:color/white"
+            android:typeface="normal" />
+    </LinearLayout>
+
+</fragment>

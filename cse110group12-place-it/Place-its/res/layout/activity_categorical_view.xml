@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_color"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background_color2"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/PlaceitTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="Place It Title"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="55dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/PlaceitDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/PlaceitTitle"
+                android:text="Place It Description"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/PlaceitLocationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/PlaceitDescription"
+                android:text="locationname"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:typeface="normal" />
+            
+            <TextView
+                android:id="@+id/PlaceitLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/PlaceitLocationName"
+                android:text="locationitself"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:typeface="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:background="@drawable/background_color3"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/SnoozeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:minHeight="35dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Snooze"
+                android:textColor="@android:color/white"
+                android:typeface="normal" />
+            
+            <Button
+                android:id="@+id/DeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:layout_below="@id/SnoozeButton"
+                android:minHeight="35dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Delete"
+                android:textColor="@android:color/white"
+                android:typeface="normal" />
+            
+            <Button
+                android:id="@+id/RepostButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/DeleteButton"
+                android:layout_margin="5dp"
+                android:background="@drawable/button"
+                android:minHeight="35dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Repost"
+                android:textColor="@android:color/white"
+                android:typeface="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
